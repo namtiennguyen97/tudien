@@ -1,0 +1,20 @@
+.bd{
+    position: relative;
+    border: 3px;
+    width: 300px;
+    height: 200px;
+}
+
+#hh{
+    border: 200px;
+    color: red;
+}
+#trans{
+    color: darkblue;
+    border-color: red;
+}
+
+#input{
+    color: aqua;
+    border-color: aqua;
+}

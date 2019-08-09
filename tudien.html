@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="fashion.css">
+</head>
+<body class="bd">
+<input type="text" id="input">
+<input type="button" value="Translate" onclick="tran()" id="trans">
+<div id="result"></div>
+<p id="hh">Ghi chú: Những từ có thể dịch: "Cat", "Dog", "Fish", "Mouse", "Bat", "Worm", "Bird", "Tiger" </p>
+
+<script>
+    let english = ["cat", "dog", "fish", "mouse", "bat", "worm", "bird", "tiger"]; // 8 phan tu// day la a
+    let tiEngViEt = ["Mèo", "Chó", "Cá", "Chuột", "Dơi", "Sâu", "Chim", "Hổ"]; // 8 phan tu
+    function tran() {
+        let text = document.getElementById("input").value;
+        for (let b = 0; b < english.length; b++) {
+            if (text === english[b]) {
+                text = tiEngViEt[b];
+                document.getElementById("result").innerHTML = "Translated: " + text;
+                // alert(text);
+                break;
+            } else {
+                document.getElementById("result").innerHTML = "Wrong word!";
+            }
+        }
+    }
+
+
+</script>
+</body>
+</html>
